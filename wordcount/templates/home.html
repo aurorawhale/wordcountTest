@@ -1,1 +1,7 @@
-<h1>Hello World!</h1>
+<h1>글자를 입력할 수 있는 페이지입니다.</h1>
+
+<form action="{% url 'result' %}">
+    <textarea cols="40" rows="30" name="fulltext"></textarea>
+    <br>
+    <input type="submit" name="Count!">
+</form>

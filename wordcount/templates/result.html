@@ -1,0 +1,18 @@
+<h1>당신이 입력한 글자는 {{counts}}자입니다.</h1>
+
+<h2>전문</h2>
+{{allText}}
+<br>
+
+<h2>단어 등장 횟수</h2>
+
+{% for word, count in wordsDiction%}
+
+{{word}} : {{count}}
+<br>
+
+{% endfor %}
+
+<br>
+
+<a href="{% url 'home'%}">다시 하시겠습니까?</a>
